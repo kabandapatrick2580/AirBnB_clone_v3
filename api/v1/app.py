@@ -30,8 +30,8 @@ def errorhandler404(exception):
 
 if __name__ == "__main__":
     # Get host and port from environment variables, defaulting to '0.0.0.0' and 5000
-    host = os.getenv('HBNB_API_HOST', '0.0.0.0')
-    port = int(os.getenv('HBNB_API_PORT', '5000'))
+    a_host = os.getenv('HBNB_API_HOST', '0.0.0.0')
+    a_port = int(os.getenv('HBNB_API_PORT', '5000'))
 
     # Run the Flask application
-    app.run(host=host, port=port, threaded=True)
+    app.run(host=a_host, port=a_port, threaded=True)
